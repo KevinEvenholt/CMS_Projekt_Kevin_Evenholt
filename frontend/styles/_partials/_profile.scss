@@ -1,0 +1,25 @@
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    #ratedBooksButtons, #h2{
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 0 0 1rem 1rem;
+        button{
+            background-color: transparent;
+            border: none;
+            font-size: large;
+            cursor: pointer;
+            &:hover{
+                color: #f1c40f;
+            }
+        }
+    }
+    #aside-h2{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 400;
+        margin: 0 0 1rem 1rem;
+    }
+}

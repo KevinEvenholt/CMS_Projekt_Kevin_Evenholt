@@ -1,0 +1,81 @@
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    margin: 0 2rem 4rem 0;
+    
+    #headerContent{
+        display: flex;
+        img{
+            position: absolute;
+            left: 1rem;
+            top: 0;
+            height: 4rem;
+        }
+        button{
+            margin-right: 4rem;
+            background-color: transparent;
+            border: none;
+            font-size: 26px;
+            font-weight: 300;
+            cursor: pointer;
+            &:hover{
+                color: #f1c40f;
+            }
+        }
+    }
+    #loginDiv, #registerDiv{
+        position: absolute;
+        right: 2rem;
+        width: 200px;
+        margin-top: 20rem;
+        z-index: 1;
+        background-color: #F9F3EE;
+        h2{
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin: 0.5rem 0;
+            
+        }
+        p{
+            font-size: 1rem;
+            font-weight: 300;
+            margin: 0.5rem 0;
+        }
+        input{
+            width: 100%;
+            height: 2rem;
+            margin: 0.5rem 0;
+            padding: 0 0.5rem;
+            border: none;
+            border-bottom: 1px solid #000000;
+            background-color: transparent;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            width: 100%;
+            height: 2rem;
+            margin: 0.5rem 0;
+            padding: 0 0.5rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #f1c40f;
+            font-size: 1rem;
+            font-weight: 300;
+            cursor: pointer;
+            &:hover{
+                background-color: #f39c12;
+            }
+        }
+    }
+   
+    #welcomeUser{
+        position: absolute;
+        right: 1rem;
+        margin-top: 2rem;
+    }
+} 

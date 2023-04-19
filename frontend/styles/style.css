@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#books, #toRead, #ratedBooks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+#books div, #toRead div, #ratedBooks div {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+#books div img, #toRead div img, #ratedBooks div img {
+  width: 170px;
+  height: 300px;
+  box-shadow: 11px 6px 13px -1px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 11px 6px 13px -1px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 11px 6px 13px -1px rgba(0, 0, 0, 0.46);
+}
+#books div div, #toRead div div, #ratedBooks div div {
+  flex-direction: column;
+  border: none;
+  justify-content: space-around;
+}
+#books div div button, #toRead div div button, #ratedBooks div div button {
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+  background-color: #eae0c2;
+  border-radius: 15px;
+  border: 1px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+  color: #505739;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 14px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+#books div div button:hover, #toRead div div button:hover, #ratedBooks div div button:hover {
+  background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+  background-color: #ccc2a6;
+}
+#books div div button:active, #toRead div div button:active, #ratedBooks div div button:active {
+  position: relative;
+  top: 1px;
+}
+#books div div div, #toRead div div div, #ratedBooks div div div {
+  all: unset;
+  flex-direction: row;
+}
+#books div .star, #toRead div .star, #ratedBooks div .star {
+  color: #f1c40f;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  margin: 0 2rem 4rem 0;
+}
+header #headerContent {
+  display: flex;
+}
+header #headerContent img {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  height: 4rem;
+}
+header #headerContent button {
+  margin-right: 4rem;
+  background-color: transparent;
+  border: none;
+  font-size: 26px;
+  font-weight: 300;
+  cursor: pointer;
+}
+header #headerContent button:hover {
+  color: #f1c40f;
+}
+header #loginDiv, header #registerDiv {
+  position: absolute;
+  right: 2rem;
+  width: 200px;
+  margin-top: 20rem;
+  z-index: 1;
+  background-color: #F9F3EE;
+}
+header #loginDiv h2, header #registerDiv h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+header #loginDiv p, header #registerDiv p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+header #loginDiv input, header #registerDiv input {
+  width: 100%;
+  height: 2rem;
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+  border: none;
+  border-bottom: 1px solid #000000;
+  background-color: transparent;
+}
+header #loginDiv input:focus, header #registerDiv input:focus {
+  outline: none;
+}
+header #loginDiv button, header #registerDiv button {
+  width: 100%;
+  height: 2rem;
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1c40f;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+header #loginDiv button:hover, header #registerDiv button:hover {
+  background-color: #f39c12;
+}
+header #welcomeUser {
+  position: absolute;
+  right: 1rem;
+  margin-top: 2rem;
+}
+
+.darkmode {
+  background-color: #292929;
+  color: #DCDCDC;
+}
+.darkmode header #headerContent button {
+  color: #DCDCDC;
+}
+.darkmode header #headerContent button:hover {
+  color: #f1c40f;
+}
+.darkmode #hero .hero-text h2 {
+  color: #DCDCDC;
+}
+
+.rainbow {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.lightmode {
+  background-color: #F9F3EE;
+  color: #000000;
+}
+
+#hero {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+#hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  height: 100%;
+  margin-top: 15rem;
+  justify-content: flex-start;
+  gap: 5rem;
+}
+#hero .hero-text h1 {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #51758e, rgba(199, 169, 145, 0.7333333333));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+#hero .hero-text #description-start {
+  font-size: 1rem;
+  width: 500px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+#hero img {
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.2);
+  transform: rotate(3deg);
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+aside #ratedBooksButtons, aside #h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0 0 1rem 1rem;
+}
+aside #ratedBooksButtons button, aside #h2 button {
+  background-color: transparent;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+}
+aside #ratedBooksButtons button:hover, aside #h2 button:hover {
+  color: #f1c40f;
+}
+aside #aside-h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0 0 1rem 1rem;
+}/*# sourceMappingURL=style.css.map */

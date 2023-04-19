@@ -1,0 +1,59 @@
+#books, #toRead, #ratedBooks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    div{
+        display: flex;
+        flex: 1;
+        padding: 10px;
+        // border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        img{
+            width: 170px;
+            height: 300px;
+            box-shadow: 11px 6px 13px -1px rgba(0,0,0,0.46);
+-webkit-box-shadow: 11px 6px 13px -1px rgba(0,0,0,0.46);
+-moz-box-shadow: 11px 6px 13px -1px rgba(0,0,0,0.46);
+        }
+        div{
+            flex-direction: column;
+            border: none;
+            justify-content: space-around;
+            button {
+                box-shadow: 0px 1px 0px 0px #1c1b18;
+                background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+                background-color:#eae0c2;
+                border-radius:15px;
+                border:1px solid #333029;
+                display:inline-block;
+                cursor:pointer;
+                color:#505739;
+                font-family:Arial;
+                font-size:14px;
+                font-weight:bold;
+                padding:10px 14px;
+                text-decoration:none;
+                text-shadow:0px 1px 0px #ffffff;
+            }
+            button:hover {
+                background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+                background-color:#ccc2a6;
+            }
+            button:active {
+                position:relative;
+                top:1px;
+            }
+            div{
+                all: unset;
+                flex-direction: row;
+
+            }
+        }
+        .star{
+            color: #f1c40f;
+            cursor: pointer;
+        }
+
+    }
+}

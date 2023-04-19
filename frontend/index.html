@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Ducks</title>
+    <link
+      rel="shortcut icon"
+      href="img/icons8-duck-16.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/40ac34b025.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <div id="headerContent">
+        <img src="img/svg-image.png" alt="" />
+        <button id="home">Home</button>
+        <button id="profile">Profile</button>
+        <button id="startLogin">
+          <span>Login</span>
+        </button>
+        <button id="startLogout">Logout</button>
+        <p id="welcomeUser"></p>
+      </div>
+      <div id="loginDiv">
+        <h2>Login</h2>
+        <label for="username">Username</label>
+        <br />
+        <input type="text" id="username" placeholder="Användarnamn" />
+        <br />
+        <label for="password">Password</label>
+        <br />
+        <input
+          type="password"
+          id="password"
+          autocomplete=""
+          placeholder="Lösenord"
+        />
+        <br />
+        <button id="login">Login</button>
+        <br />
+        <button id="register">Register User</button>
+      </div>
+      <div id="registerDiv">
+        <h2>Register User</h2>
+        <label for="registerUsername">Username</label>
+        <br />
+        <input type="text" id="registerUsername" placeholder="Användarnamn" />
+        <br />
+        <label for="registerEmail">Email</label>
+        <br />
+        <input type="text" id="registerEmail" placeholder="Email" />
+        <br />
+        <label for="registerPassword">Password</label>
+        <br />
+        <input
+          type="password"
+          id="registerPassword"
+          autocomplete=""
+          placeholder="Lösenord"
+        />
+        <br />
+        <button id="registerNewUser">Register User</button>
+      </div>
+    </header>
+    <div id="hero">
+      <div class="hero-text">
+        <div>
+          <h1>Book Ducks</h1>
+        </div>
+        <div id="description-start">
+          <h2>
+            Welcome to Book Ducks, the perfect destination for book lovers! Our
+            website offers an extensive collection of books that you can browse
+            and explore at your leisure. Whether you're a fan of mystery,
+            romance, science fiction, or any other genre, we have something for
+            you. So come and join us at Book Ducks, and discover your next
+            favorite book today!
+          </h2>
+        </div>
+      </div>
+      <img src="img/1527134288.png" alt="" />
+    </div>
+    <main id="displayBooks">
+      <div id="books"></div>
+    </main>
+    <aside>
+        <h2 id="aside-h2"></h2>
+        <h2 id="h2">To Read List</h2>
+        <div id="toRead">
+      </div>
+      <hr>
+      <div id="ratedBooksButtons">
+          <h2 >Rated Books</h2>
+        <label for="ratedTitle">Sort:</label>
+        <button id="ratedTitle">Title</button>
+        <button id="ratedAuthor">Author</button>
+        <button id="ratedRating">Rating</button>
+      </div>
+      <div id="ratedBooks"></div>
+    </aside>
+  </body>
+</html>
